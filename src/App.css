@@ -1,0 +1,18 @@
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul,
+li,
+a,
+div,
+span {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
