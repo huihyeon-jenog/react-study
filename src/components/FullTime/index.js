@@ -13,7 +13,8 @@ import {
   PreferenceTablebody,
 } from "../Preferences";
 import { BsPencilSquare, BsTrash } from "react-icons/bs";
-const FullTime = () => {
+const FullTime = ({ toggle }) => {
+  console.log(toggle);
   return (
     <>
       <PreferenceContainer>
@@ -23,7 +24,7 @@ const FullTime = () => {
             &gt;&gt;환경설정 &gt;정규직
           </PreferenceTopBreadCrumbs>
         </PreferenceTop>
-        <PreferenceBtn>새로등록</PreferenceBtn>
+        <PreferenceBtn onClick={toggle}>새로등록</PreferenceBtn>
         <PreferenceTable>
           <PreferenceTablehead>
             <PreferenceTableTr>

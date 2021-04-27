@@ -1,0 +1,29 @@
+aside {
+  color: rgb(116, 116, 116);
+  position: relative;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: #e6e9ed;
+  font-size: 18px;
+  padding-top: 30px;
+}
+.snbWrap {
+  margin-top: 20px;
+  width: 100%;
+}
+.title {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+.title ul li:first-child {
+  margin-top: 10px;
+}
+.title ul li {
+  height: 30px;
+}
+.title ul li a {
+  color: black;
+  margin-left: 15px;
+  font-weight: 600;
+}

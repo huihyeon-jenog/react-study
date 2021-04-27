@@ -1,29 +1,28 @@
 import React from "react";
-import {
-  MainContainer,
-  MainItemWrap,
-  MainItemTitle,
-  MainItemHit,
-  MainBtnWrap,
-  WriteBtn,
-  ListBtn,
-} from "./MainElements";
+import styles from "./MainContentStyle.module.css";
+import { BsPencilSquare } from "react-icons/bs";
+import { MdAssignment } from "react-icons/md";
 const Main = () => {
   return (
-    <MainContainer>
-      <MainItemWrap>
-        <MainItemTitle>작성중</MainItemTitle>
-        <MainItemHit>건</MainItemHit>
-      </MainItemWrap>
-      <MainItemWrap>
-        <MainItemTitle>작성중</MainItemTitle>
-        <MainItemHit>건</MainItemHit>
-      </MainItemWrap>
-      <MainBtnWrap>
-        <WriteBtn>근로계약서 작성</WriteBtn>
-        <ListBtn>작성중 목록</ListBtn>
-      </MainBtnWrap>
-    </MainContainer>
+    <section className={styles.mainContainer}>
+      <div className={styles.itemWrap}>
+        <div className={styles.item}>
+          <BsPencilSquare className={styles.icon} />
+          <span className={styles.hits}>12건</span>
+          <span>작성중</span>
+        </div>
+        <div className={styles.item}>
+          <MdAssignment className={styles.icon} />
+          <span className={styles.hits}>12건</span>
+          <span>서명대기중</span>
+        </div>
+      </div>
+
+      <div className={styles.btnWrap}>
+        <button>근로계약서 작성</button>
+        <button>작성중 목록</button>
+      </div>
+    </section>
   );
 };
 

@@ -1,0 +1,46 @@
+.preferenceContainer {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 60px;
+  position: relative;
+}
+.newBtn {
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  width: 130px;
+  height: 30px;
+  border: 1px solid #304ffe;
+  color: #304ffe;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  position: relative;
+}
+.top:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: black;
+  bottom: 0;
+}
+.preferenceTitle {
+}
+.preferenceTable {
+  width: 100%;
+  margin-top: 4em;
+  border: none;
+  border-collapse: collapse;
+  text-align: center;
+}
+.preferenceThead {
+  color: #fff;
+  background: black;
+}
+.preferenceThead > tr {
+  height: 30px;
+}

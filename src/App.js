@@ -1,8 +1,5 @@
 import MainPage from "./pages/MainPage";
-import FullTimePreferences from "./pages/FullTimePreferences";
-import DailyjobPreference from "./pages/DailyjobPreference";
-import ExecutivesPreference from "./pages/ExecutivesPreference";
-import FreelancerPreference from "./pages/FreelancerPreference";
+import Preferences from "./pages/Preferences";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
@@ -11,10 +8,10 @@ function App() {
     <>
       <Router>
         <Route exact path="/" component={MainPage} />
-        <Route path="/fulltimepreference" component={FullTimePreferences} />
-        <Route path="/dailyjobpreference" component={DailyjobPreference} />
-        <Route path="/executivespreference" component={ExecutivesPreference} />
-        <Route path="/freelancerpreference" component={FreelancerPreference} />
+        <Route path="/fulltimepreference" component={Preferences} />
+        <Route path="/dailyjobpreference" component={Preferences} />
+        <Route path="/executivespreference" component={Preferences} />
+        <Route path="/freelancerpreference" component={Preferences} />
       </Router>
     </>
   );
