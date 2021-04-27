@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { AiFillCaretRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
+
 export const SidebarContainer = styled.div`
   margin: 3em 0 0 1.2em;
   font-size: 18px;
@@ -22,7 +24,7 @@ export const SidebarTitle = styled.li``;
 export const InnerSidebar = styled.ul`
   margin: 10px 0 10px 1.5em;
 `;
-export const SidebarA = styled.a``;
+export const SidebarA = styled(Link)``;
 export const SidebarItem = styled.li`
   margin-top: 10px;
   position: relative;

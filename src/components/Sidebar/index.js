@@ -17,16 +17,16 @@ const Sidebar = () => {
           환경설정
           <InnerSidebar>
             <SidebarItem>
-              <SidebarA href="/">정규직</SidebarA>
+              <SidebarA to="/fulltimepreference">정규직</SidebarA>
             </SidebarItem>
             <SidebarItem>
-              <SidebarA href="/">일용직</SidebarA>
+              <SidebarA to="/dailyjobpreference">일용직</SidebarA>
             </SidebarItem>
             <SidebarItem>
-              <SidebarA href="/">임원</SidebarA>
+              <SidebarA to="/executivespreference">임원</SidebarA>
             </SidebarItem>
             <SidebarItem>
-              <SidebarA href="/">프리랜서</SidebarA>
+              <SidebarA to="/freelancerpreference">프리랜서</SidebarA>
             </SidebarItem>
           </InnerSidebar>
         </SidebarTitle>
@@ -35,16 +35,16 @@ const Sidebar = () => {
           근로계약서 작성
           <InnerSidebar>
             <SidebarItem>
-              <SidebarA href="/">정규직</SidebarA>
+              <SidebarA to="/">정규직</SidebarA>
             </SidebarItem>
             <SidebarItem>
-              <SidebarA href="/">일용직</SidebarA>
+              <SidebarA to="/">일용직</SidebarA>
             </SidebarItem>
             <SidebarItem>
-              <SidebarA href="/">임원</SidebarA>
+              <SidebarA to="/">임원</SidebarA>
             </SidebarItem>
             <SidebarItem>
-              <SidebarA href="/">프리랜서</SidebarA>
+              <SidebarA to="/">프리랜서</SidebarA>
             </SidebarItem>
           </InnerSidebar>
         </SidebarTitle>
@@ -53,13 +53,13 @@ const Sidebar = () => {
           근로계약서 목록
           <InnerSidebar>
             <SidebarItem>
-              <SidebarA href="/">작성중 목록</SidebarA>
+              <SidebarA to="/">작성중 목록</SidebarA>
             </SidebarItem>
             <SidebarItem>
-              <SidebarA href="/">서명대기 목록</SidebarA>
+              <SidebarA to="/">서명대기 목록</SidebarA>
             </SidebarItem>
             <SidebarItem>
-              <SidebarA href="/">서명완료 목록</SidebarA>
+              <SidebarA to="/">서명완료 목록</SidebarA>
             </SidebarItem>
           </InnerSidebar>
         </SidebarTitle>
