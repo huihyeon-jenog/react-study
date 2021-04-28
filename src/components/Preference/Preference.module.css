@@ -2,17 +2,23 @@
   width: 80%;
   height: 500px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 50px;
   position: relative;
 }
 .newBtn {
   position: absolute;
   right: 0;
   margin-top: 20px;
-  width: 130px;
-  height: 30px;
-  border: 1px solid #304ffe;
+  width: 120px;
+  height: 35px;
+  border: 1px solid black;
+  color: black;
+  background: none;
+}
+.newBtn:hover {
+  border: 2px solid #304ffe;
   color: #304ffe;
+  font-weight: 700;
 }
 .top {
   display: flex;
@@ -26,9 +32,7 @@
   width: 100%;
   height: 2px;
   background: black;
-  bottom: 0;
-}
-.preferenceTitle {
+  bottom: 0px;
 }
 .preferenceTable {
   width: 100%;

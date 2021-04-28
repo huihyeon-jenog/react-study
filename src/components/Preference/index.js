@@ -1,18 +1,18 @@
 import React from "react";
 import { BsPencilSquare, BsTrash } from "react-icons/bs";
+import { useGlobalContext } from "../../context";
+import Header from "./Header";
 import styles from "./Preference.module.css";
 
-const Preference = ({ toggle, preference }) => {
+const Preference = () => {
+  const { toggle } = useGlobalContext();
   return (
     <section className={styles.preferenceContainer}>
-      <div className={styles.top}>
-        <h1 className={styles.preferenceTitle}>{preference} 환경설정</h1>
-        <span>&gt;&gt;환경설정 &gt;{preference}</span>
-      </div>
+      <Header />
       <button onClick={toggle} className={styles.newBtn}>
         새로등록
       </button>
-      <table className={styles.preferenceTable}>
+      <table className={styles.preferenceTable} summary="환경설정 테이블 목록">
         <thead className={styles.preferenceThead}>
           <tr>
             <td>타입명</td>

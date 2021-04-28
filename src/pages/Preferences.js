@@ -1,42 +1,24 @@
-import React, { useEffect, useState } from "react";
-import Header from "../components/Header";
+import React from "react";
 import Sidebar from "../components/Sidebar";
 import Setting from "../components/Setting";
 import Preference from "../components/Preference";
+import { Helmet } from "react-helmet-async";
+import { useGlobalContext } from "../context";
 
-const MainPage = (props) => {
-  const [setting, setSetting] = useState(false);
-  const [preference, setPerference] = useState("");
-  const toggle = () => {
-    setSetting(!setting);
-  };
-  const getUrl = () => {
-    if (props.match.url === "/fulltimepreference") {
-      setPerference("정규직");
-    } else if (props.match.url === "/dailyjobpreference") {
-      setPerference("일용직");
-    } else if (props.match.url === "/executivespreference") {
-      setPerference("임원");
-    } else if (props.match.url === "/freelancerpreference") {
-      setPerference("프리랜서");
-    }
-  };
-  useEffect(() => {
-    getUrl();
-  }, []);
+const Preferences = () => {
+  const { state, setting } = useGlobalContext();
   return (
     <>
-      <Header />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{state}</title>
+      </Helmet>
       <div style={{ width: "100%", display: "flex", height: "950px" }}>
         <Sidebar />
-        {setting ? (
-          <Setting preference={preference} toggle={toggle} />
-        ) : (
-          <Preference preference={preference} toggle={toggle} />
-        )}
+        {setting ? <Setting /> : <Preference />}
       </div>
     </>
   );
 };
 
-export default MainPage;
+export default Preferences;

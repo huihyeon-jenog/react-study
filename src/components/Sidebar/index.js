@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "./asidestyle.module.css";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../../context";
+
 const Sidebar = () => {
+  const { setState } = useGlobalContext();
   return (
     <aside>
       <ul className={styles.snbWrap}>
@@ -9,16 +12,27 @@ const Sidebar = () => {
           환경설정
           <ul>
             <li>
-              <Link to="/fulltimepreference">정규직</Link>
+              <Link to="/fulltimepreference" onClick={() => setState("정규직")}>
+                정규직
+              </Link>
             </li>
             <li>
-              <Link to="/dailyjobpreference">일용직</Link>
+              <Link to="/dailyjobpreference" onClick={() => setState("일용직")}>
+                일용직
+              </Link>
             </li>
             <li>
-              <Link to="/executivespreference">임원</Link>
+              <Link to="/executivespreference" onClick={() => setState("임원")}>
+                임원
+              </Link>
             </li>
             <li>
-              <Link to="/freelancerpreference">프리랜서</Link>
+              <Link
+                to="/freelancerpreference"
+                onClick={() => setState("프리랜서")}
+              >
+                프리랜서
+              </Link>
             </li>
           </ul>
         </li>
